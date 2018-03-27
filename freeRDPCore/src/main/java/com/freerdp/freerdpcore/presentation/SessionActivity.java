@@ -162,11 +162,11 @@ public class SessionActivity extends AppCompatActivity implements
                     WindowManager.LayoutParams.FLAG_FULLSCREEN);
         }
         this.setContentView(R.layout.session);
-        if (hasHardwareMenuButton() || ApplicationSettingsActivity.getHideActionBar(this)) {
+     /*   if (hasHardwareMenuButton() || ApplicationSettingsActivity.getHideActionBar(this)) {
             this.getSupportActionBar().hide();
         } else
             this.getSupportActionBar().show();
-        Log.v(TAG, "Session.onCreate");
+        Log.v(TAG, "Session.onCreate");*/
         // ATTENTION: We use the onGlobalLayout notification to start our
         // session.
         // This is because only then we can know the exact size of our session
