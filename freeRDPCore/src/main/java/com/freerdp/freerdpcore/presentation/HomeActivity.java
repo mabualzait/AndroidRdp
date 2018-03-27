@@ -10,38 +10,23 @@
 package com.freerdp.freerdpcore.presentation;
 
 import android.app.AlertDialog;
-import android.content.DialogInterface;
-import android.content.Intent;
+import android.content.*;
 import android.content.res.Configuration;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.text.Editable;
-import android.text.TextWatcher;
+import android.text.*;
 import android.util.Log;
-import android.view.ContextMenu;
+import android.view.*;
 import android.view.ContextMenu.ContextMenuInfo;
-import android.view.Menu;
-import android.view.MenuInflater;
-import android.view.MenuItem;
-import android.view.View;
-import android.view.View.OnClickListener;
-import android.view.View.OnCreateContextMenuListener;
-import android.widget.AdapterView;
+import android.view.View.*;
+import android.widget.*;
 import android.widget.AdapterView.AdapterContextMenuInfo;
-import android.widget.Button;
-import android.widget.CheckBox;
-import android.widget.EditText;
-import android.widget.ListView;
 
 import com.freerdp.freerdpcore.R;
 import com.freerdp.freerdpcore.application.GlobalApp;
-import com.freerdp.freerdpcore.domain.BookmarkBase;
-import com.freerdp.freerdpcore.domain.ConnectionReference;
-import com.freerdp.freerdpcore.domain.PlaceholderBookmark;
-import com.freerdp.freerdpcore.domain.QuickConnectBookmark;
-import com.freerdp.freerdpcore.utils.BookmarkArrayAdapter;
-import com.freerdp.freerdpcore.utils.SeparatedListAdapter;
+import com.freerdp.freerdpcore.domain.*;
+import com.freerdp.freerdpcore.utils.*;
 
 import java.util.ArrayList;
 
@@ -110,7 +95,11 @@ public class HomeActivity extends AppCompatActivity {
                     if (ConnectionReference.isManualBookmarkReference(refStr) ||
                             ConnectionReference.isHostnameReference(refStr)) {
                         Bundle bundle = new Bundle();
-                        bundle.putString(SessionActivity.PARAM_CONNECTION_REFERENCE, refStr);
+                        ManualBookmark bookmark = new ManualBookmark();
+                        bookmark.setUsername("admin");
+                        bookmark.setHostname("000.000.000.000");
+                        bookmark.setPassword("password");
+                        bundle.putParcelable(SessionActivity.SERVER, bookmark);
 
                         Intent sessionIntent = new Intent(view.getContext(), SessionActivity.class);
                         sessionIntent.putExtras(bundle);

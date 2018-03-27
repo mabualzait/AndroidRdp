@@ -39,10 +39,10 @@ public class BookmarkBase implements Parcelable, Cloneable {
     private String username;
     private String password;
     private String domain;
-    private ScreenSettings screenSettings;
-    private PerformanceFlags performanceFlags;
-    private AdvancedSettings advancedSettings;
-    private DebugSettings debugSettings;
+    private ScreenSettings screenSettings = new ScreenSettings();
+    private PerformanceFlags performanceFlags = new PerformanceFlags();
+    private AdvancedSettings advancedSettings = new AdvancedSettings();
+    private DebugSettings debugSettings = new DebugSettings();
 
     public BookmarkBase(Parcel parcel) {
         type = parcel.readInt();
