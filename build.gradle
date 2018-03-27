@@ -15,8 +15,8 @@ ext {
 
     println '----------------- Project configuration -------------------'
     println 'VERSION_NAME:       ' + versionName
-    println 'RELEASE_STORE_FILE: '+ "malik"
-    println 'RELEASE_KEY_ALIAS:  '+ "CloudConnectiv"
+    println 'RELEASE_STORE_FILE: ' + "malik"
+    println 'RELEASE_KEY_ALIAS:  ' + "CloudConnectiv"
     println '-----------------------------------------------------------'
 }
 
@@ -27,6 +27,7 @@ buildscript {
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:3.0.1'
+        classpath 'com.github.dcendents:android-maven-gradle-plugin:1.5'
     }
 }
 
