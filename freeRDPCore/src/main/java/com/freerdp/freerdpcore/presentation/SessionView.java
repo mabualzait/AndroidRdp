@@ -10,25 +10,14 @@
 package com.freerdp.freerdpcore.presentation;
 
 import android.content.Context;
-import android.graphics.Bitmap;
-import android.graphics.Canvas;
-import android.graphics.Matrix;
-import android.graphics.Rect;
-import android.graphics.RectF;
+import android.graphics.*;
 import android.graphics.drawable.BitmapDrawable;
-import android.util.AttributeSet;
-import android.util.Log;
-import android.view.InputDevice;
-import android.view.KeyEvent;
-import android.view.MotionEvent;
-import android.view.ScaleGestureDetector;
-import android.view.View;
+import android.util.*;
+import android.view.*;
 
 import com.freerdp.freerdpcore.application.SessionState;
-import com.freerdp.freerdpcore.services.LibFreeRDP;
-import com.freerdp.freerdpcore.utils.DoubleGestureDetector;
+import com.freerdp.freerdpcore.utils.*;
 import com.freerdp.freerdpcore.utils.GestureDetector;
-import com.freerdp.freerdpcore.utils.Mouse;
 
 import java.util.Stack;
 
@@ -194,12 +183,12 @@ public class SessionView extends View {
     }
 
     // dirty hack: we call back to our activity and call onBackPressed as this doesn't reach us when the soft keyboard is shown ...
-    @Override
+   /* @Override
     public boolean dispatchKeyEventPreIme(KeyEvent event) {
         if (event.getKeyCode() == KeyEvent.KEYCODE_BACK && event.getAction() == KeyEvent.ACTION_DOWN)
             ((SessionActivity) this.getContext()).onBackPressed();
         return super.dispatchKeyEventPreIme(event);
-    }
+    }*/
 
     // perform mapping on the touch event's coordinates according to the current scaling
     private MotionEvent mapTouchEvent(MotionEvent event) {
