@@ -531,14 +531,14 @@ public class SessionActivity extends AppCompatActivity implements
         return true;
     }
 
-    @Override
+   /* @Override
     public void onBackPressed() {
         // hide keyboards (if any visible) or send alt+f4 to the session
         if (sysKeyboardVisible || extKeyboardVisible)
             showKeyboard(false, false);
         else
             keyboardMapper.sendAltF4();
-    }
+    }*/
 
     @Override
     public boolean onKeyLongPress(int keyCode, KeyEvent event) {
