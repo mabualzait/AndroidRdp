@@ -188,13 +188,14 @@ public class SessionActivity extends AppCompatActivity implements
                         }
                     }
                 });
-        sessionView = (SessionView) findViewById(R.id.sessionView);
+        sessionView = findViewById(R.id.sessionView);
         sessionView.setScaleGestureDetector(new ScaleGestureDetector(this,
                 new PinchZoomListener()));
         sessionView.setSessionViewListener(this);
         sessionView.requestFocus();
-        touchPointerView = (TouchPointerView) findViewById(R.id.touchPointerView);
+        touchPointerView = findViewById(R.id.touchPointerView);
         touchPointerView.setTouchPointerListener(this);
+
         keyboardMapper = new KeyboardMapper();
         keyboardMapper.init(this);
         keyboardMapper.reset(this);
@@ -207,17 +208,17 @@ public class SessionActivity extends AppCompatActivity implements
         cursorKeyboard = new Keyboard(getApplicationContext(),
                 R.xml.cursor_keyboard);
         // hide keyboard below the sessionView
-        keyboardView = (KeyboardView) findViewById(R.id.extended_keyboard);
+        keyboardView = findViewById(R.id.extended_keyboard);
         keyboardView.setKeyboard(specialkeysKeyboard);
         keyboardView.setOnKeyboardActionListener(this);
-        modifiersKeyboardView = (KeyboardView) findViewById(R.id.extended_keyboard_header);
+        modifiersKeyboardView = findViewById(R.id.extended_keyboard_header);
         modifiersKeyboardView.setKeyboard(modifiersKeyboard);
         modifiersKeyboardView.setOnKeyboardActionListener(this);
-        scrollView = (ScrollView2D) findViewById(R.id.sessionScrollView);
+        scrollView = findViewById(R.id.sessionScrollView);
         scrollView.setScrollViewListener(this);
         uiHandler = new UIHandler();
         libFreeRDPBroadcastReceiver = new LibFreeRDPBroadcastReceiver();
-        zoomControls = (ZoomControls) findViewById(R.id.zoomControls);
+        zoomControls = findViewById(R.id.zoomControls);
         zoomControls.hide();
         zoomControls.setOnZoomInClickListener(new View.OnClickListener() {
             @Override
@@ -247,6 +248,7 @@ public class SessionActivity extends AppCompatActivity implements
         mClipboardManager.addClipboardChangedListener(this);
         mDecor = getWindow().getDecorView();
         mDecor.setSystemUiVisibility(View.SYSTEM_UI_FLAG_HIDE_NAVIGATION | View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY);
+
     }
 
     @Override
@@ -391,6 +393,7 @@ public class SessionActivity extends AppCompatActivity implements
         Log.v(TAG, "bindSession called");
         session.setUIEventListener(this);
         sessionView.onSurfaceChange(session);
+
         scrollView.requestLayout();
         keyboardMapper.reset(this);
         mDecor.setSystemUiVisibility(View.SYSTEM_UI_FLAG_HIDE_NAVIGATION | View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY);
