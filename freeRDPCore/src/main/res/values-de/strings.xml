@@ -147,7 +147,6 @@
     <string name="error_bookmark_incomplete"><i><b>Abbrechen</b></i> um Einstellungen zu verwerfen\n<i><b>Fortfahren</b></i> um weiter zu editieren</string>
     <string name="error_connection_failure">Konnte keine Verbindung zum Server herstellen!</string>
     <!-- Info message strings -->
-    <string name="info_capabilities_changed">Die Bildschirmeinstellungen mussten angepasst werden, da der Server die gewählten nicht unterstützt!</string>
     <string name="info_reset_success">Lösche Zertifikatcache!</string>
     <string name="info_reset_failed">Konnte Zertifikatcache nicht löschen!</string>
     <!-- Dialog strings -->

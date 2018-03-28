@@ -147,7 +147,6 @@
     <string name="error_bookmark_incomplete">点击 “继续” 继续编辑，点击 "取消" 放弃当前更改</string>
     <string name="error_connection_failure">建立连接失败！</string>
     <!-- Info message strings -->
-    <string name="info_capabilities_changed">由于主机不支持您的设置所以显示设置已经修改为适应主机的设置！</string>
     <string name="info_reset_success">清除证书缓存成功！</string>
     <string name="info_reset_failed">清楚证书缓存失败！</string>
     <!-- Dialog strings -->

@@ -147,7 +147,6 @@
     <string name="error_bookmark_incomplete">"Appuyez sur \"Annuler\" pour annuler, ou cliquez sur «Continuer» pour spécifier les champs obligatoires."</string>
     <string name="error_connection_failure">"Impossible d'établir une connexion au serveur!"</string>
     <!-- Info message strings -->
-    <string name="info_capabilities_changed">"Les paramètres de l'écran ont changé parce que le serveur ne prend pas en charge les paramètres que vous avez spécifiés!"</string>
     <string name="info_reset_success">"La cache de certificats a été supprimée!"</string>
     <string name="info_reset_failed">"Impossible de supprimer la cache de certificat!"</string>
     <!-- Dialog strings -->

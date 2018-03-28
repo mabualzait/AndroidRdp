@@ -148,7 +148,6 @@
     <string name="error_bookmark_incomplete">Druk op "Annuleren" om af te breken!\nKlik op "Doorgaan" om de verplichte velden op te geven!</string>
     <string name="error_connection_failure">Fout bij het verbinden met de server!</string>
     <!-- Info message strings -->
-    <string name="info_capabilities_changed">De scherm instellingen zijn veranderd omdat de server de door u opgegeven instellingen niet ondersteunt!</string>
     <string name="info_reset_success">Certificaat cache is verwijderd!</string>
     <string name="info_reset_failed">Fout bij het verwijderderen van certificaat cache!</string>
     <!-- Dialog strings -->

@@ -189,7 +189,7 @@
     <string name="error_bookmark_incomplete">Press "Cancel" to abort!\nPress "Continue" to specify the required fields!</string>
     <string name="error_connection_failure">Failed to establish a connection to the server!</string>
     <!-- Info message strings -->
-    <string name="info_capabilities_changed">The screen settings have changed because the server does not support the settings you specified!</string>
+    <!--<string name="info_capabilities_changed">The screen settings have changed because the server does not support the settings you specified!</string>-->
     <string name="info_reset_success">Deleted the certificate cache!</string>
     <string name="info_reset_failed">Failed to delete certificate cache!</string>
     <!-- Dialog strings -->

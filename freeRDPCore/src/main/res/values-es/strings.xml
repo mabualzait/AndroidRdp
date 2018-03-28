@@ -148,7 +148,6 @@
     <string name="error_bookmark_incomplete">Pulse el botón "Cancelar" para abortar! \ NPulse "Continuar" para especificar los campos obligatorios!</string>
     <string name="error_connection_failure">Failed to establish a connection to the server!</string>
     <!-- Info message strings -->
-    <string name="info_capabilities_changed">Los ajustes de pantalla se han cambiado porque el escritorio virtual no es compatible con la configuración especificada!</string>
     <string name="info_reset_success">Eliminado el cache del certificado!</string>
     <string name="info_reset_failed">No se pudo borrar el caché del certificado!</string>
     <!-- Dialog strings -->

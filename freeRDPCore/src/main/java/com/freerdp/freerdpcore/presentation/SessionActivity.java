@@ -661,15 +661,17 @@ public class SessionActivity extends AppCompatActivity implements
         // (refer to android_freerdp.c for more info on this problem)
         BookmarkBase.ScreenSettings settings = session.getBookmark()
                 .getActiveScreenSettings();
+/*
         if ((settings.getWidth() != width && settings.getWidth() != width + 1)
-                || settings.getHeight() != height
-                || settings.getColors() != bpp)
-            uiHandler
+*/
+               /* || settings.getHeight() != height
+                || settings.getColors() != bpp)*/
+          /*  uiHandler
                     .sendMessage(Message.obtain(
                             null,
                             UIHandler.DISPLAY_TOAST,
                             getResources().getText(
-                                    R.string.info_capabilities_changed)));
+                                    R.string.info_capabilities_changed)));*/
     }
 
     @Override
